@@ -1,0 +1,3 @@
+#excluding the swap files and application files
+*.swp
+!*.*

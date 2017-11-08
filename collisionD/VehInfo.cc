@@ -172,7 +172,7 @@ std::string VehInfo::check_collision(std::string objId, Coord pos, double speed,
     {
         for(row = row_start ;row <= row_end ; row++)
         {
-            cout <<"X.Xcheck_col found: " << objId<< "atX " << col << " ,Y " << row << endl;
+//CHK            cout <<"X.Xcheck_col found: " << objId<< "atX " << col << " ,Y " << row << endl;
            /* t2 = cleanup_coords(Coord(col,row,0.0)); //Performing cleaning up of the coords to prevent out of bound reading
             row = t2.y;
             col = t2.x;*/
@@ -206,7 +206,7 @@ std::string VehInfo::check_possible_collision(std::string objId, Coord pos, doub
             /*t2 = cleanup_coords(Coord(col,row,0.0)); //Performing cleaning up of the coords to prevent out of bound reading
             row = t2.y;
             col = t2.x;*/
-            cout <<"X.Xcheck_pos_col found: " << objId<< "atX " << col << " ,Y " << row << endl;
+//CHK            cout <<"X.Xcheck_pos_col found: " << objId<< "atX " << col << " ,Y " << row << endl;
             if(col == int(pos.x) && row == int(pos.y))
                 continue;
             else if (plane[row][col].ObjId != "" && plane[row][col].ObjId != objId ) {
